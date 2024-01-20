@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: thistle;
+  div {
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: darkslateblue;
+    transition: all 0.5s ease;
+    &:hover {
+      color: aliceblue;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    li {
+      padding: 0.5rem 1rem;
+      a {
+        font-size: 1.5rem;
+        color: aliceblue;
+        transition: all 0.5s ease;
+        &:hover {
+          color: darkslateblue;
+        }
+      }
+    }
+  }
+}

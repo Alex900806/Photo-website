@@ -1,0 +1,157 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: thistle;
+}
+nav div {
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: darkslateblue;
+  transition: all 0.5s ease;
+}
+nav div:hover {
+  color: aliceblue;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+nav ul li a {
+  font-size: 1.5rem;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  color: darkslateblue;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.search input {
+  font-size: 1.8rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid thistle;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.search input:hover {
+  background-color: floralwhite;
+}
+.search button {
+  font-size: 1.8rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid thistle;
+  cursor: pointer;
+  background-color: thistle;
+  color: aliceblue;
+}
+.search button div {
+  transition: all 0.8s ease;
+}
+.search button div:hover {
+  transform: scale(0.9);
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pictures .picture {
+  padding: 1rem;
+  width: 400px;
+}
+.pictures .picture .photographerName {
+  font-size: 1.3rem;
+  transition: all 0.8s ease;
+}
+.pictures .picture .photographerName:hover {
+  transform: translate(-10px);
+  color: brown;
+}
+.pictures .picture .imageContainer {
+  overflow: hidden;
+  height: 40vh;
+}
+.pictures .picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1s ease;
+}
+.pictures .picture img:hover {
+  transform: scale(1.3);
+}
+.pictures .picture a {
+  transition: all 0.8s ease;
+}
+.pictures .picture a:hover {
+  color: brown;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+body {
+  background-color: oldlace;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.morePicture button {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: thistle;
+  transition: all 0.8s ease;
+}
+.morePicture button:hover {
+  transform: scale(0.9);
+  color: black;
+}/*# sourceMappingURL=styles.css.map */

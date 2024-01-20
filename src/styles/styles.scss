@@ -1,0 +1,52 @@
+@import "./nav";
+@import "./search";
+@import "./footer";
+@import "./picture";
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+body {
+  background-color: oldlace;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  button {
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: thistle;
+    transition: all 0.8s ease;
+    &:hover {
+      transform: scale(0.9);
+      color: black;
+    }
+  }
+}
