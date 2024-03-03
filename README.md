@@ -22,6 +22,6 @@ HTML, CSS, JavaScript, React
 
 ## 實際頁面
 
-![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa.jpg)
-![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa2.jpg)
-![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa3.jpg)
+![image](https://github.com/Alex900806/Photo-website/blob/main/demo_pictures/photo.webp)
+![image](https://github.com/Alex900806/Photo-website/blob/main/demo_pictures/photo2.webp)
+![image](https://github.com/Alex900806/Photo-website/blob/main/demo_pictures/photo3.webp)
