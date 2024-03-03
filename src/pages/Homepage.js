@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Picture from "../components/Picture";
+import config from "../components/config";
 
 const Homepage = () => {
   let [input, setInput] = useState("");
@@ -8,7 +9,7 @@ const Homepage = () => {
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
   // pexels API
-  const auth = "VWxjKUmk80SGulSLkyrgf5aRdFN8iwXNbSdL20baNy1KplQO6HofBg03";
+  const auth = config.PEXELS_AUTH;
   const initialURL = "https://api.pexels.com/v1/curated?&page=1&per_page=15";
   const searchURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=1`;
   // fetch data from pexels api

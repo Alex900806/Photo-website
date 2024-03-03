@@ -1,7 +1,8 @@
 import React from "react";
+import config from "./config";
 
 const Nav = () => {
-  const auth = "VWxjKUmk80SGulSLkyrgf5aRdFN8iwXNbSdL20baNy1KplQO6HofBg03";
+  const auth = config.PEXELS_AUTH;
 
   const handleHomeClick = () => {
     const apiUrl = "https://api.pexels.com/v1/curated?&page=1&per_page=15";
