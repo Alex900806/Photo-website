@@ -8,13 +8,14 @@ const Homepage = () => {
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
+
   // pexels API
   const auth = config.PEXELS_AUTH;
   const initialURL = "https://api.pexels.com/v1/curated?&page=1&per_page=15";
   const searchURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=1`;
+
   // fetch data from pexels api
   const search = async (url) => {
-    setPage(2);
     const dataFetch = await fetch(url, {
       method: "GET",
       headers: {
@@ -24,17 +25,19 @@ const Homepage = () => {
     });
     let parseData = await dataFetch.json();
     setData(parseData.photos);
+    setCurrentSearch(input);
   };
 
   // load more pictures
   const morePicture = async () => {
     let newURL;
-    if (input === "") {
+    setPage(page + 1);
+    if (currentSearch === "") {
       newURL = `https://api.pexels.com/v1/curated?&page=${page}&per_page=12`;
     } else {
-      newURL = `https://api.pexels.com/v1/search?query=${input}&per_page=12&page=${page}`;
+      newURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=12&page=${page}`;
     }
-    setPage(page + 1);
+
     const dataFetch = await fetch(newURL, {
       method: "GET",
       headers: {
@@ -51,7 +54,7 @@ const Homepage = () => {
     search(initialURL);
   }, []);
 
-  //JS closure的解法
+  // 當按下 search 時，會讓 currentSearch 改變
   useEffect(() => {
     if (currentSearch === "") {
       search(initialURL);
